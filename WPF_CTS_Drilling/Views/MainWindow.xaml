@@ -1,13 +1,43 @@
 ﻿<catel:Window x:Class="WPF_CTS_Drilling.Views.MainWindow"
               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-              xmlns:catel="http://catel.codeplex.com"
-              ResizeMode="CanResize">
+              xmlns:d="http://schemas.microsoft.com/expression/2010/interactivity"
+              xmlns:mc ="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+              xmlns:catel="http://catel.codeplex.com"                                
+              xmlns:ControlzEx="clr-namespace:ControlzEx;assembly=MaterialDesignThemes.Wpf" 
+                                                
+              ResizeMode="CanResize" Height="500">
 
-     <Grid>
-      
-         
-         
+    <Grid VerticalAlignment="Top" Margin="16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock VerticalAlignment="Center"><Run Text="Name:"/></TextBlock>
+        <TextBox Grid.Column="1" Margin="8,0,8,0" VerticalAlignment="Center"/>
+        <Button Grid.Column="2" Content="Submit"/>
+
+
+
+
+
+
+        <ControlzEx:PopupEx>
+            <Grid Background="#FFE5E5E5" Height="100" Width="100"/>
+        </ControlzEx:PopupEx>
+        <materialDesign:PopupBox Content="PopupBox" Grid.Column="1" HorizontalAlignment="Left" Margin="8,136,0,-104" VerticalAlignment="Top"/>
+        <ProgressBar Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="8,183,0,-159" VerticalAlignment="Top" Width="415"/>
+        <Menu x:Name="menu" Grid.Column="1" HorizontalAlignment="Left" Height="212" Margin="8,217,0,-371" VerticalAlignment="Top" Width="79"/>
+        <Slider x:Name="slider" Grid.Column="1" HorizontalAlignment="Left" Margin="8,308,0,-250" VerticalAlignment="Top" Width="297"/>
+        <StatusBar Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="92,331,0,-355" VerticalAlignment="Top" Width="100"/>
+        <TreeView x:Name="treeView" Grid.Column="1" HorizontalAlignment="Left" Height="76" Margin="197,331,0,-331" VerticalAlignment="Top" Width="100"/>
+
+
+
+
+
     </Grid>
-    
+
 </catel:Window>

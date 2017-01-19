@@ -3,6 +3,7 @@
     using Catel.MVVM;
     using System.Threading.Tasks;
 
+
     public class MainWindowViewModel : ViewModelBase
     {
         public MainWindowViewModel()

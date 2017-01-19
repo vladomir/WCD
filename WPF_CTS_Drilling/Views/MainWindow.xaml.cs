@@ -1,6 +1,7 @@
-﻿namespace WPF_CTS_Drilling.Views
+﻿
+namespace WPF_CTS_Drilling.Views
 {
-    public partial class MainWindow
+    public partial class MainWindow 
     {
         public MainWindow()
         {

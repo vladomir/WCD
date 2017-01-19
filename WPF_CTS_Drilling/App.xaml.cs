@@ -9,6 +9,8 @@
     using Catel.Reflection;
     using Catel.Windows;
 
+
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
