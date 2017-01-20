@@ -35,7 +35,7 @@
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
-                  
+
                 </DockPanel>
             </materialDesign:DrawerHost.LeftDrawerContent>
             <DockPanel>
@@ -58,9 +58,19 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    
-                
+
+
                 </Grid>
+                <Ellipse Fill="#FFF4F4F5" Height="381" Stroke="Black" VerticalAlignment="Top" Width="377" RenderTransformOrigin="0.5,0.5" Margin="0,159.2,0,0">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="4.485"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="3.922"/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
             </DockPanel>
         </materialDesign:DrawerHost>
     </materialDesign:DialogHost>
