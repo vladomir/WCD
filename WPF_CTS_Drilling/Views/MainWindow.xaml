@@ -61,6 +61,7 @@
                     
                 
                 </Grid>
+                <Button x:Name="button" Content="Button" Height="687" VerticalAlignment="Top" Width="75"/>
             </DockPanel>
         </materialDesign:DrawerHost>
     </materialDesign:DialogHost>
