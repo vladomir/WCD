@@ -35,7 +35,7 @@
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
-                  
+
                 </DockPanel>
             </materialDesign:DrawerHost.LeftDrawerContent>
             <DockPanel>
@@ -58,9 +58,10 @@
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    
-                
+
+
                 </Grid>
+                <Label x:Name="label" Content="Vadim ne dyrak" Height="598" VerticalAlignment="Top" Margin="0,91.2,0,-0.4"/>
             </DockPanel>
         </materialDesign:DrawerHost>
     </materialDesign:DialogHost>
